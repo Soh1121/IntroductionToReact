@@ -76,6 +76,5 @@
 // console.log(func1("func1です"));
 
 // アロー関数
-// func2 のアロー関数を作成
 const func2 = (str) => str;
 console.log(func2("func2です"));
