@@ -46,18 +46,32 @@
 // val5.push("monkey");
 // console.log(val5);
 
+// /**
+//  * テンプレート文字列 ``
+//  */
+// const name = "じゃけぇ";
+// const age = 31;
+
+// // 「私の名前ははじゃけぇです。年齢は31歳です。」
+
+// // 従来の方法
+// const message1 = "私の名前は" + name + "です。年齢は" + age + "歳です。";
+// console.log(message1);
+
+// // テンプレート文字列を用いた方法
+// const message2 = `私の名前は${name}です。年齢は${age}歳です。`;
+// console.log(message2);
+
 /**
- * テンプレート文字列 ``
+ * アロー関数
  */
-const name = "じゃけぇ";
-const age = 31;
+// 従来の関数
+// function func1(str) {
+//     return str;
+// }
 
-// 「私の名前ははじゃけぇです。年齢は31歳です。」
-
-// 従来の方法
-const message1 = "私の名前は" + name + "です。年齢は" + age + "歳です。";
-console.log(message1);
-
-// テンプレート文字列を用いた方法
-const message2 = `私の名前は${name}です。年齢は${age}歳です。`;
-console.log(message2);
+// biome-ignore lint/complexity/useArrowFunction: <explanation>
+const  func1 = function (str) {
+    return str;
+};
+console.log(func1("func1です"));
