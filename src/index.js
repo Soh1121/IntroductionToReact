@@ -70,8 +70,14 @@
 //     return str;
 // }
 
-// biome-ignore lint/complexity/useArrowFunction: <explanation>
-const  func1 = function (str) {
-    return str;
+// const func1 = function (str) {
+// 	return str;
+// };
+// console.log(func1("func1です"));
+
+// アロー関数
+// func2 のアロー関数を作成
+const func2 = (str) => {
+	return str;
 };
-console.log(func1("func1です"));
+console.log(func2("func2です"));
