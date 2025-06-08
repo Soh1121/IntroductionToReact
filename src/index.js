@@ -79,5 +79,8 @@
 // const func2 = (str) => str;
 // console.log(func2("func2です"));
 
-const func3 = (num1, num2) => num1 + num2;
+const func3 = (num1, num2) => ({
+	hoge: num1,
+	fuga: num2,
+});
 console.log(func3(10, 20));
