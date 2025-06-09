@@ -112,5 +112,12 @@
 /**
  * デフォルト値（引数、分割代入）
  */
-const sayHello = (name = "ゲスト") => console.log(`こんにちは！${name}さん！`);
-sayHello();
+// const sayHello = (name = "ゲスト") => console.log(`こんにちは！${name}さん！`);
+// sayHello();
+
+const myProfile = {
+	age: 31,
+};
+const { age } = myProfile;
+console.log(age);
+console.log(name);
