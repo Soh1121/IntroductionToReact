@@ -112,5 +112,5 @@
 /**
  * デフォルト値（引数、分割代入）
  */
-const sayHello = (name) => console.log(`こんにちは！${name}さん！`);
-sayHello("じゃけぇ");
+const sayHello = (name = "ゲスト") => console.log(`こんにちは！${name}さん！`);
+sayHello();
