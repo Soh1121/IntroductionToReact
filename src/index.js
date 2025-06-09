@@ -118,6 +118,6 @@
 const myProfile = {
 	age: 31,
 };
-const { age } = myProfile;
+const { age, name = "ゲスト" } = myProfile;
 console.log(age);
 console.log(name);
