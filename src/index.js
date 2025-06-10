@@ -125,11 +125,20 @@
 /**
  * オブジェクトの省略記法
  */
-const name = "じゃけぇ";
-const age = 31;
+// const name = "じゃけぇ";
+// const age = 31;
 
-const myProfile = {
-	name,
-	age,
-};
-console.log(myProfile);
+// const myProfile = {
+// 	name,
+// 	age,
+// };
+// console.log(myProfile);
+
+/**
+ * スプレッド構文 ...
+ */
+
+// 配列の展開
+const arr1 = [1, 2];
+console.log(arr1);
+console.log(...arr1);
