@@ -129,7 +129,7 @@ const name = "じゃけぇ";
 const age = 31;
 
 const myProfile = {
-	name: name,
-	age: age,
+	name,
+	age,
 };
 console.log(myProfile);
