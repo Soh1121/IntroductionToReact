@@ -182,7 +182,7 @@ const nameArr = ["田中", "山田", "じゃけぇ"];
 // const nameArr2 = nameArr.map((name) => {
 // 	return name;
 // });
-nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`));
+// nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`));
 // console.log(nameArr2);
 
 // const numArr = [1, 2, 3, 4, 5];
@@ -190,3 +190,11 @@ nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`));
 // 	return num % 2 === 1;
 // });
 // console.log(newNumArr);
+
+const newNameArr = nameArr.map((name) => {
+	if (name !== "じゃけぇ") {
+		return `${name}さん`;
+	}
+	return name;
+});
+console.log(newNameArr);
