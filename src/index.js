@@ -174,19 +174,19 @@
 /**
  * mapやfilterを使った配列の処理
  */
-// const nameArr = ["田中", "山田", "じゃけぇ"];
+const nameArr = ["田中", "山田", "じゃけぇ"];
 // for (let index = 0; index < nameArr.length; index++) {
-// 	console.log(nameArr[index]);
+// 	console.log(`${index + 1}番目は${nameArr[index]}です`);
 // }
 
 // const nameArr2 = nameArr.map((name) => {
 // 	return name;
 // });
-// nameArr.map((name) => console.log(name));
+nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`));
 // console.log(nameArr2);
 
-const numArr = [1, 2, 3, 4, 5];
-const newNumArr = numArr.filter((num) => {
-	return num % 2 === 1;
-});
-console.log(newNumArr);
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+// 	return num % 2 === 1;
+// });
+// console.log(newNumArr);
