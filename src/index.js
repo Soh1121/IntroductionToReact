@@ -203,5 +203,12 @@
  * 三項演算子
  */
 // ある条件 ? 条件がtrueのとき : 条件がfalseのとき
-const val1 = 1 > 2 ? "trueです" : "falseです";
-console.log(val1);
+// const val1 = 1 > 2 ? "trueです" : "falseです";
+// console.log(val1);
+
+const num = "1300";
+// console.log(num.toLocaleString());
+
+const formattedNum =
+	typeof num === "number" ? num.toLocaleString : "数値を入力してください";
+console.log(formattedNum);
