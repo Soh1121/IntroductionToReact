@@ -174,7 +174,7 @@
 /**
  * mapやfilterを使った配列の処理
  */
-const nameArr = ["田中", "山田", "じゃけぇ"];
+// const nameArr = ["田中", "山田", "じゃけぇ"];
 // for (let index = 0; index < nameArr.length; index++) {
 // 	console.log(`${index + 1}番目は${nameArr[index]}です`);
 // }
@@ -191,10 +191,17 @@ const nameArr = ["田中", "山田", "じゃけぇ"];
 // });
 // console.log(newNumArr);
 
-const newNameArr = nameArr.map((name) => {
-	if (name !== "じゃけぇ") {
-		return `${name}さん`;
-	}
-	return name;
-});
-console.log(newNameArr);
+// const newNameArr = nameArr.map((name) => {
+// 	if (name !== "じゃけぇ") {
+// 		return `${name}さん`;
+// 	}
+// 	return name;
+// });
+// console.log(newNameArr);
+
+/**
+ * 三項演算子
+ */
+// ある条件 ? 条件がtrueのとき : 条件がfalseのとき
+const val1 = 1 > 2 ? "trueです" : "falseです";
+console.log(val1);
