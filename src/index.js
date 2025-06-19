@@ -213,7 +213,18 @@
 // 	typeof num === "number" ? num.toLocaleString() : "数値を入力してください";
 // console.log(formattedNum);
 
-const checkSum = (num1, num2) => {
-	return num1 + num2 > 100 ? "100を超えています!!" : "許容範囲ないです";
-};
-console.log(checkSum(60, 50));
+// const checkSum = (num1, num2) => {
+// 	return num1 + num2 > 100 ? "100を超えています!!" : "許容範囲ないです";
+// };
+// console.log(checkSum(60, 50));
+
+/**
+ * 論理演算子のほんとうの意味を知ろう && ||
+ */
+// truthy, falsy について
+const val = 0;
+if (val) {
+	console.log("valはtruthyです");
+} else {
+	console.log("valはfalsyです");
+}
