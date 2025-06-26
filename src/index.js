@@ -222,9 +222,19 @@
  * 論理演算子のほんとうの意味を知ろう && ||
  */
 // truthy, falsy について
-const val = 0;
-if (val) {
-	console.log("valはtruthyです");
-} else {
-	console.log("valはfalsyです");
+// const val = 0;
+// if (val) {
+// 	console.log("valはtruthyです");
+// } else {
+// 	console.log("valはfalsyです");
+// }
+
+const flag1 = true;
+const flag2 = true;
+
+if (flag1 || flag2) {
+	console.log("1か2はtrueになります");
+}
+if (flag1 && flag2) {
+	console.log("1も2もtrueになります");
 }
