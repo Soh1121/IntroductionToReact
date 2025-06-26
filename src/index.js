@@ -238,3 +238,8 @@ if (flag1 || flag2) {
 if (flag1 && flag2) {
 	console.log("1も2もtrueになります");
 }
+
+// || は左側が truthy のときその時点で返却する
+const num = undefined;
+const fee = num || "金額未設定です";
+console.log(fee);
