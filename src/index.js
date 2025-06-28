@@ -243,3 +243,8 @@ if (flag1 && flag2) {
 const num = undefined;
 const fee = num || "金額未設定です";
 console.log(fee);
+
+// && は左側が falsy のときその時点で返却する
+const num2 = "ABC";
+const fee2 = num2 && "何か設定されました";
+console.log(fee2);
