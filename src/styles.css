@@ -15,6 +15,12 @@ button {
     margin: 0px 2px;
 }
 
+button:hover {
+    background-color: #79a8a9;
+    color: #fff;
+    cursor: pointer;
+}
+
 .input-area {
     background-color: #c6e5d9;
     width: 400px;
