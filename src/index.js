@@ -17,8 +17,13 @@ const onClickAdd = () => {
 	p.className = "todo-item";
 	p.innerText = inputText;
 
+	// button（完了）タグ生成
+	const completeButton = document.createElement("button");
+	completeButton.innerText = "完了";
+
 	// liタグの子要素に各要素を設定
 	div.appendChild(p);
+	div.appendChild(completeButton);
 	li.appendChild(div);
 
 	// 未完了リストに追加
