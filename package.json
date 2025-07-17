@@ -5,6 +5,7 @@
 	},
 	"scripts": {
 		"lint": "npx @biomejs/biome lint ./",
+		"lint:fix": "npx @biomejs/biome lint ./ --fix",
 		"dev": "vite"
 	},
 	"dependencies": {
