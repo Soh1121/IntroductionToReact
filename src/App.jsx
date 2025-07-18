@@ -4,7 +4,7 @@ import { ColorfulMessage } from "./components/ColorfulMessage";
 export const App = () => {
 	const [num, setNum] = useState(0);
 	const onClickButton = () => {
-		setNum(111);
+		setNum(num + 1);
 	};
 	return (
 		<>
