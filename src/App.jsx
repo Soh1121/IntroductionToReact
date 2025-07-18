@@ -3,14 +3,16 @@ import { ColorfulMessage } from "./components/ColorfulMessage";
 
 export const App = () => {
 	const [num, setNum] = useState(0);
-	const onClickButton = () => alert();
+	const onClickButton = () => {
+		setNum(111);
+	};
 	return (
 		<>
 			<h1 style={{ color: "red" }}>こんにちは!</h1>
 			<ColorfulMessage color="blue">お元気ですか？</ColorfulMessage>
 			<ColorfulMessage color="green">元気です！</ColorfulMessage>
 			<button type="button" onClick={onClickButton}>
-				ボタン
+				カウントアップ
 			</button>
 			<p>{num}</p>
 		</>
