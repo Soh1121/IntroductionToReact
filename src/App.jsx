@@ -9,7 +9,7 @@ export const App = () => {
 	return (
 		<>
 			<h1 style={{ color: "red" }}>こんにちは!</h1>
-			<ColorfulMessage />
+			<ColorfulMessage color="blue" message="お元気ですか？" />
 			<p style={contentStyleB}>元気です！</p>
 			<button type="button" onClick={onClickButton}>
 				ボタン

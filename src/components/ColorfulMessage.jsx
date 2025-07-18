@@ -1,7 +1,7 @@
-export const ColorfulMessage = () => {
+export const ColorfulMessage = (props) => {
 	const contentStyleA = {
-		color: "blue",
+		color: props.color,
 		fontSize: "18px",
 	};
-	return <p style={contentStyleA}>お元気ですか？</p>;
+	return <p style={contentStyleA}>{props.message}</p>;
 };
