@@ -5,8 +5,8 @@ export const App = () => {
 	return (
 		<>
 			<h1 style={{ color: "red" }}>こんにちは!</h1>
-			<ColorfulMessage color="blue" message="お元気ですか？" />
-			<ColorfulMessage color="green" message="元気です！" />
+			<ColorfulMessage color="blue">お元気ですか？</ColorfulMessage>
+			<ColorfulMessage color="green">元気です！</ColorfulMessage>
 			<button type="button" onClick={onClickButton}>
 				ボタン
 			</button>
