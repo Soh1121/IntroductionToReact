@@ -4,14 +4,22 @@ import { ColorfulMessage } from "./components/ColorfulMessage";
 export const App = () => {
 	console.log("--APP--");
 	const [num, setNum] = useState(0);
-	const [isShowFace, setIsShowFace] = useState(true);
+	const [isShowFace, setIsShowFace] = useState(false);
 	const onClickButton = () => {
-		setNum((prev) => prev + 1);
 		setNum((prev) => prev + 1);
 	};
 	const onClickToggle = () => {
 		setIsShowFace(!isShowFace);
 	};
+
+	if (num > 0) {
+		if (num % 3 === 0) {
+			isShowFace || setIsShowFace(true);
+		} else {
+			isShowFace && setIsShowFace(false);
+		}
+	}
+
 	return (
 		<>
 			<h1 style={{ color: "red" }}>こんにちは!</h1>
@@ -24,7 +32,7 @@ export const App = () => {
 			<button type="button" onClick={onClickToggle}>
 				on/off
 			</button>
-			{isShowFace && <p>サンプル</p>}
+			{isShowFace && <p>あほ</p>}
 		</>
 	);
 };
