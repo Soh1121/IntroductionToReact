@@ -1,4 +1,4 @@
-export const ColorfulMessage = ({ color, children }) => {
+const ColorfulMessage = ({ color, children }) => {
 	console.log("--ColorfulMessage--");
 	const contentStyleA = {
 		color,
@@ -6,3 +6,5 @@ export const ColorfulMessage = ({ color, children }) => {
 	};
 	return <p style={contentStyleA}>{children}</p>;
 };
+
+export default ColorfulMessage;
