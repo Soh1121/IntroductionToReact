@@ -14,6 +14,13 @@ export const Todo = () => {
 
 	const onChangeText = (event) => setTodoText(event.target.value);
 
+	const onClickAdd = () => {
+		if (todoText === "") return;
+		const newTodos = [...incompleteTodos, todoText];
+		setIncompleteTodos(newTodos);
+		setTodoText("");
+	};
+
 	return (
 		<>
 			<div className="input-area">
@@ -22,7 +29,9 @@ export const Todo = () => {
 					value={todoText}
 					onChange={onChangeText}
 				/>
-				<button type="button">追加</button>
+				<button type="button" onClick={onClickAdd}>
+					追加
+				</button>
 			</div>
 			<div className="incomplete-area">
 				<p className="title">未完了のTODO</p>
